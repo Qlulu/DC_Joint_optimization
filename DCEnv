@@ -1,3 +1,4 @@
+
 import gym
 from gym import spaces
 from gym.utils import seeding
@@ -41,6 +42,14 @@ class AllVar(gym.Env):
         self.num_ins = no_inputs  # defines number of inputs
         self.scale_var = cfg['scale_var']        
         self.MSE_thresh1 = (cfg['thresh1']*self.scale_var)**2   # defines threshold for MSE
+        
+        # add variables about sever
+        
+        
+        
+        
+        
+        
 
         # Get the function of input-output mapping, and max & min:
         [self.PUE, mins, maxes] = self.get_funcs('PUE')
